@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porotofolio with Tailwind</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="icon" href="assets/img/icon.png">
+    <style>
+      body {
+        background-color: #14212b;
+      }
+
+      /* *{
+        border: 1px solid red;
+      }
+       */
+      .basic-3 {
+        background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+          no-repeat;
+        transition: 0.5s;
+      }
+      .basic-3:hover {
+        --d: 50%;
+      }
+
+     html {
+      scroll-behavior: smooth;
+     }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="flex justify-between">
+        <div class="flex ">
+          <img src="assets/img/Group 1.png" alt="" />
+        </div>
+        <ul class="flex my-10 mx-10 text-stone-300">
+          <li><a href="" class="px-10 basic-3">Home</a></li>
+          <li><a href= #myGoals class="px-10 basic-3">My Goals</a></li>
+          <li><a href= #myProject class="px-10 basic-3">My Project</a></li>
+          <li><a href= #contactMe class="px-5 py-2 rounded-full text-black bg-emerald-300 transition-all ease-in-out duration-500 hover:bg-stone-300 ">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+        <div class="flex justify-between my-32 ">
+            <div class="mx-28">
+                <h3 class="text-white font-bold my-2">Hello World, my name is</h3>
+                <h1 class="text-emerald-300 font-bold text-5xl my-2">Abdillah Faiz</h1>
+                <p class="italic font-semibold text-white my-2">Junior Front-End Developer</p>
+                <p class="text-white font-light">And this is my first personal web portofolio,<br>
+                    Programming, Design and Photography are things<br>
+                    that i really like since i was in Junior High School
+                </p>
+            </div>
+            <div>
+                <img src="assets/img/1.png" alt="" class="-my-44">
+                <!-- <img src="assets/img/Groupline.png" alt="" class="box-border absolute left-[465px] top-[-210px]"> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="myGoals" class="container mt-96 mb-32 ml-32">
+      <div class="flex justify-around">
+        <!-- <div class="container bg-white h-[363px] w-[276px] rounded-xl">
+          <h1 id="goals" class="text-[36px] font-bold p-5">My Goals in Career</h1>
+          <ul class="text-[18px] p-5 ">
+            <li>- Career in Tokopedia</li>
+            <li>- Career in Google</li>
+            <li>- Have a advanced Start up Company</li>
+          </ul>
+        </div> -->
+
+        <div class="container bg-white h-[320px] w-[276px] rounded-xl" style="box-shadow: 0px 0px 30px rgba(125, 252, 224, 0.6);">
+          <h1 id="goals" class="text-[36px] font-bold px-8 py-4 ">My Goals</h1>
+          <ul class="text-[18px] px-8 py-4 ">
+            <li>- Dart Language</li>
+            <li>- Flutter</li>
+            <li>- Android</li>
+            <li>- Swift</li>
+            <li>- Java</li>
+            <li>- C#</li>
+          </ul>
+        </div>
+
+        <div class="container bg-white h-[320px] w-[276px] rounded-xl" style="box-shadow: 0px 0px 30px rgba(125, 252, 224, 0.6);">
+          <h1 id="goals" class="text-[36px] font-bold px-8 py-4">My Skills</h1>
+          <ul class="text-[18px] p-8 py-4">
+            <li>- HTML</li>
+            <li>- CSS</li>
+            <li>- Bootstrap</li>
+            <li>- TailwindCSS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="myProject">
+        <div class="">
+          <h1 class="text-[36px] font-bold p-8 text-center text-emerald-300" >My Project</h1>
+          <iframe src="https://abdillahfaiz.github.io/slicing_profile/" frameborder="0" class="h-[720px] w-[1000px] mx-auto mb-32" ></iframe>
+        </div>
+    </section>
+ 
+    <footer id="contactMe" class="flex justify-around bg-emerald-500 pt-[100px] pb-[30px] text-white">
+        <div>
+            <img src="assets/img/Group 1.png" alt="">
+        </div>
+        <ul>
+            <li class="uppercase my-2 font-semibold">About FaizAbdillah </li>
+            <li><a href="" class="my-1">Home</a></li>
+            <li><a href="" class="my-1">Get in Touch</a></li>
+            <li><a href="" class="my-1">FAQs</a></li>
+        </ul>
+        <ul>
+            <li class="uppercase my-2 font-semibold">Product </li>
+            <li><a href="" class="my-1">Testimonials</a></li>
+            <li><a href="" class="my1">How it works</a></li>
+            <li><a href="" class="my-1">Member Discounts</a></li>
+        </ul>
+        <div>
+            <p class="uppercase my-2 font-semibold">Not Quiet Ready</p>
+            <p class="my-1">Join the Cooperated with Us</p>
+            <form action="">
+                <input type="email" placeholder="Enter your Email.." class="py-2 px-4 rounded-md">
+                <button class="bg-[#14212b] mx-3 py-2 px-4 rounded-md ">Submit</button>
+            </form>
+            <ul class="flex my-2 ">
+                <li><a href="https://www.instagram.com/faiz.abdlh/" class="text-3xl pr-2"><iconify-icon icon="akar-icons:instagram-fill"></iconify-icon></a></li>
+                <li><a href="https://web.whatsapp.com/" class="text-3xl px-2"><iconify-icon icon="akar-icons:whatsapp-fill"></iconify-icon></a></li>
+                <li><a href="https://twitter.com/" class="text-3xl px-2"><iconify-icon icon="akar-icons:twitter-fill"></iconify-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/abdillah-faiz-15a02a249/" class="text-3xl px-2"><iconify-icon icon="akar-icons:linkedin-box-fill"></iconify-icon></a></li>
+                <li><a href="https://www.facebook.com/" class="text-3xl px-2"><iconify-icon icon="akar-icons:facebook-fill"></iconify-icon></a></li>
+            </ul>            
+        </div>
+    </footer>
+    <div class="flex justify-center bg-emerald-500 text-white py-3">
+        <p>Copyright ©️ 2022 FaizAbdillah Production - All Right Reserved</p>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+  </body>
+</html>
